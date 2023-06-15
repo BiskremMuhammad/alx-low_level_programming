@@ -1,3 +1,2 @@
 #!/bin/bash
-gcc "$CFILE" -o hello;
-c=hello
+c=$(gcc "$CFILE" -o hello)
