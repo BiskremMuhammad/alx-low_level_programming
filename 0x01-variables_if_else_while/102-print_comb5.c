@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int i, j, a, b;
+	int i, j, a, b, ij, ab;
 
 	for (i = '0'; i <= '9'; i++)
 	{
@@ -17,7 +17,9 @@ int main(void)
 			{
 				for (b = '0'; b <= '9'; b++)
 				{
-					if ((i+j) != (a+b) && (i+j) < (a+b))
+					ij = (10 * i) + j;
+					ab = (10 * a) + b;
+					if ((i + j) != (a + b) && ab > ij)
 					{
 						putchar(i);
 						putchar(j);
@@ -25,7 +27,7 @@ int main(void)
 						putchar(a);
 						putchar(b);
 
-						if ((i+j) < 'q' && (a+b) <= 'r')
+						if ((i + j) < 'q' && (a + b) <= 'r')
 						{
 							putchar(',');
 							putchar(' ');
