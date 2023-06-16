@@ -8,7 +8,7 @@
  */
 int main (void)
 {
-	string alpha[] = "abcdefghijklmnopqrstuvwxyz";
+	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
 	for (i = 0; i < strlen(alpha); i++)
 	       putchar(alpha[i]);
