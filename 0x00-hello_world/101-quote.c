@@ -12,6 +12,7 @@ int main(void)
 	putchar('-');
 	putchar(' ');
 	printAuthor();
+	putchar('\n');
 
 	return (1);
 }
