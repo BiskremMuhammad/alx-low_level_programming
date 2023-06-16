@@ -21,11 +21,12 @@ void compareAndPrint(int i, int j, int a, int b)
 		putchar(a);
 		putchar(b);
 
-		if (i <= '9' && j < '9' && a <= '9' && b <= '9')
+		if (i == '9' && j == '8' && a == '9' && b == '9')
 		{
-			putchar(',');
-			putchar(' ');
+			return (0);
 		}
+		putchar(',');
+		putchar(' ');
 	}
 }
 
