@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int printQuote();
-int printAutor();
+void printQuote(void);
+void printAutor(void);
 
 /**
  * main - Program Entry Point
@@ -22,10 +22,8 @@ int main(void)
 
 /**
  * printQuote - to print the quote part
- *
- * Return: 0 void
  */
-function printQuote(void)
+void printQuote(void)
 {
 	putchar('a');
         putchar('n');
@@ -59,16 +57,12 @@ function printQuote(void)
         putchar('u');
         putchar('l');
         putchar('"');
-
-	return (0);
 }
 
 /**
  * printAuthor - to print the saying author
- *
- * Return: 0 void
  */
-function printAuthor(void)
+void printAuthor(void)
 {
 	putchar('D');
         putchar('o');
@@ -93,6 +87,4 @@ function printAuthor(void)
         putchar('-');
         putchar('1');
         putchar('9');
-
-	return (0);
 }
