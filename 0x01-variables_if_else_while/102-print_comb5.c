@@ -12,7 +12,7 @@ int main(void)
 	for (i = '0'; i <= '9'; i++)
 	{
 		for (j = '0'; j <= '9'; j++)
-		{i
+		{
 			for (a = '0'; a <= '9'; a++)
 			{
 				for (b = '0'; b <= '9'; b++)
@@ -25,7 +25,7 @@ int main(void)
 						putchar(a);
 						putchar(b);
 
-						if ((i+j) < 'r' && (a+b) <= 'r')
+						if ((i+j) < 'q' && (a+b) <= 'r')
 						{
 							putchar(',');
 							putchar(' ');
