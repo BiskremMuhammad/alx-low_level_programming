@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void printQuote(void);
-void printAutor(void);
+void printAuthor(void);
 
 /**
  * main - Program Entry Point
