@@ -6,8 +6,10 @@
  * @j: number #1 under 10 digit
  * @a: number #2 tens multiplcation
  * @b: number #2 under 10 digit
+ *
+ * Return: 0 to halt
  */
-void compareAndPrint(int i, int j, int a, int b)
+int compareAndPrint(int i, int j, int a, int b)
 {
 	int ij, ab;
 
