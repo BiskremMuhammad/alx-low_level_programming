@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+int printQuote();
+int printAutor();
+
 /**
  * main - Program Entry Point
  *
