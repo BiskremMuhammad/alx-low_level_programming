@@ -12,12 +12,12 @@ int main(void)
 	for (i = '0'; i <= '9'; i++)
 	{
 		for (j = '0'; j <= '9'; j++)
-		{
-			for (a = 0; a <= '9'; a++)
+		{i
+			for (a = '0'; a <= '9'; a++)
 			{
 				for (b = '0'; b <= '9'; b++)
 				{
-					if ((i+j) != (a+b) && (i+j) < (a=b))
+					if ((i+j) != (a+b) && (i+j) < (a+b))
 					{
 						putchar(i);
 						putchar(j);
