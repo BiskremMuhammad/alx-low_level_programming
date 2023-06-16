@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - Entry Point
@@ -8,7 +7,7 @@
  */
 int main (void)
 {
-	char alpha[];
+	char alpha[27];
 	alpha = "abcdefghijklmnopqrstuvwxyz";
 	int i = 0;
 	for (i = 0; i < strlen(alpha); i++)
