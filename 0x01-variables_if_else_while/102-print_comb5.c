@@ -30,6 +30,8 @@ int compareAndPrint(int i, int j, int a, int b)
 		putchar(',');
 		putchar(' ');
 	}
+
+	return (0);
 }
 
 /**
