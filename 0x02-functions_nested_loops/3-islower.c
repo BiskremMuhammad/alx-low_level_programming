@@ -9,5 +9,5 @@
  */
 int _islower(char c)
 {
-	return islower(c) ? 1 : 0;
+	return (islower(c) ? 1 : 0);
 }
