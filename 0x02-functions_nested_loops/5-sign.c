@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - fn to check if given number is greater/less than or equals to zero
+ * print_sign - fn to check if number is +/- or equals to zero
  * @n: the number
  *
  * Return: 1 when n is positive, -1 when negative or 0 for zero
