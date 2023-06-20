@@ -1,4 +1,4 @@
-#include "_putchar"
+#include "main.h"
 
 /**
  * print_alphabet_x10 - to print alphabert 10 times
