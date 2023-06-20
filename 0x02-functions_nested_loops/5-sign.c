@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * print_sign - fn to check if given number is greater/less than or equals to zero
