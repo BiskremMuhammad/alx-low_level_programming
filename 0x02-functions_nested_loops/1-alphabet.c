@@ -12,17 +12,6 @@ void print_alphabet(void)
 	{
 		putchar(c);
 	}
-}
 
-/**
- * main - Entry Point
- *
- * Return: 0 void
- */
-int main(void)
-{
-	print_alphabet();
 	putchar('\n');
-
-	return (0);
 }
