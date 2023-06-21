@@ -9,6 +9,7 @@
  */
 int print_last_digit(int n)
 {
+	printf("last digit of %d", INT_MIN);
 	_putchar('0' + (abs(n) % 10));
 	return (abs(n) % 10);
 }
