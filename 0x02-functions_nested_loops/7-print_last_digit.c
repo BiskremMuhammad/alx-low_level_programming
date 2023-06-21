@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -9,6 +10,7 @@
  */
 int print_last_digit(int n)
 {
+	printf("the whole number is: %d", n);
 	_putchar('0' + (abs(n) % 10));
 	return (abs(n) % 10);
 }
