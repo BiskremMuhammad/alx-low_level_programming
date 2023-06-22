@@ -10,10 +10,8 @@ void fibonacci(void)
 
 	sum = prev = b4Prev = 0;
 
-	for (f = prev = 1; i < 50; f = b4Prev + prev)
+	for (f = prev = 1; b4Prev + prev < 4000000; f = b4Prev + prev)
 	{
-		if (f > 4000000)
-			break;
 		if (f % 2 == 0)
 			sum += f;
 		b4Prev = prev;
