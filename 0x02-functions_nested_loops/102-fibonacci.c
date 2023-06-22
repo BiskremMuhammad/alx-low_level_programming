@@ -6,17 +6,18 @@
  */
 void fibonacci(void)
 {
-	long i, f, prev;
+	long i, f, prev, b4Prev;
 
-	i = 0;
+	i = prev = b4Prev = 0;
 
-	for (f = 1; i <= 50; f += prev)
+	for (f = prev = 1; i <= 50; f = b4Prev + prev)
 	{
 		if (i == 50)
 			printf("%ld", f);
 		else
 			printf("%ld, ", f);
 
+		b4Prev = prev;
 		prev = f;
 		i++;
 	}
