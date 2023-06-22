@@ -12,7 +12,7 @@ void fibonacci(void)
 
 	for (f = prev = 1; i < 50; f = b4Prev + prev)
 	{
-		if (i == 50)
+		if (i == 49)
 			printf("%ld", f);
 		else
 			printf("%ld, ", f);
