@@ -14,3 +14,15 @@ void natural(void)
 	}
 	printf("%d\n", sum);
 }
+
+/**
+ * main - Entry point
+ *
+ * Return: 0 void
+ */
+int main(void)
+{
+	natural();
+
+	return (0);
+}
