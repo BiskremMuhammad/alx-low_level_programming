@@ -8,7 +8,7 @@
 void print_to_98(int n)
 {
 	int i;
-	
+
 	i = n;
 
 	do {
@@ -23,7 +23,6 @@ void print_to_98(int n)
 			i--;
 		else
 			i++;
-	}
-	while ((n > 98 && i >= 98) || (n < 98 && i <= 98));
+	} while ((n > 98 && i >= 98) || (n < 98 && i <= 98));
 	_putchar('\n');
 }
