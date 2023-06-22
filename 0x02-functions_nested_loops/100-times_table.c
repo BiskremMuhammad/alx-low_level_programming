@@ -19,9 +19,12 @@ void print_times_table(int n)
 			{
 				printf(",");
 				if (m * i < 10)
-					printf("  ");
+					printf("   ");
 				else if (m * i < 100)
+					printf("  ");
+				else if (m * i < 1000)
 					printf(" ");
+
 				printf("%d", (m * i));
 			}
 		}
