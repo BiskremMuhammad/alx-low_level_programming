@@ -13,7 +13,7 @@ void times_table(void)
 		for (i = 0; i <= 9; i++)
 		{
 			if (i == 0)
-				_putchar("%d", i);
+				printf("%d", i);
 			else
 			{
 				printf(",");
