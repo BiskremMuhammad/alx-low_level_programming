@@ -21,6 +21,7 @@ void fibonacci(void)
 		prev = f;
 		i++;
 	}
+	putchar('\n');
 }
 
 /**
