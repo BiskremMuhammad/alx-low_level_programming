@@ -3,7 +3,7 @@
 /**
  * add - fn to add two numbers
  * @a: first number
- * @n: second number
+ * @b: second number
  *
  * Return: {int} the result of adding the two numbers
  */
