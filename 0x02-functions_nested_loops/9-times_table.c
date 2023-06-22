@@ -16,8 +16,8 @@ void times_table(void)
 			else
 			{
 				_putchar(',');
-				_putchar((n * i) > 100 ? '0' + ((n * i) / 100) : '.');
-				_putchar((n * i) > 10 ? '0' + ((n * i) / 10) : '.');
+				_putchar((n * i) > 100 ? '0' + ((n * i) / 100) : ' ');
+				_putchar((n * i) > 10 ? '0' + ((n * i) / 10) : ' ');
 				_putchar('0' + ((n * i) % 10));
 			}
 		}
