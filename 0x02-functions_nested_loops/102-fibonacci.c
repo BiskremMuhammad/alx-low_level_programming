@@ -13,9 +13,9 @@ void fibonacci(void)
 	for (f = 1; i <= 50; f += prev)
 	{
 		if (i == 50)
-			printf("%d", f);
+			printf("%ld", f);
 		else
-			printf("%d, ", f);
+			printf("%ld, ", f);
 
 		prev = f;
 		i++;
