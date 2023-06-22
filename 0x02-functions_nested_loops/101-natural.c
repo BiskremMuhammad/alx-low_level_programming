@@ -10,7 +10,8 @@ void natural(void)
 
 	for (i = 0; i < 1048 && (i % 3 == 0 || i % 5 == 0); i++)
 	{
-		sum += i;
+		if (i % 3 == 0 || i % 5 == 0)}
+			sum += i;
 	}
 	printf("%d\n", sum);
 }
