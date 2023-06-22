@@ -14,15 +14,15 @@ void print_times_table(int n)
 		for (i = 0; i <= n; i++)
 		{
 			if (i == 0)
-				_putchar('0' + i);
+				printf("%d", i);
 			else
 			{
-				_putchar(',');
-				_putchar((m * i) > 100 ? '0' + ((m * i) / 100) : ' ');
-				_putchar((m * i) > 10 ? '0' + ((m * i) / 10) : ' ');
-				_putchar('0' + ((m * i) % 10));
+				printf(',');
+				printf("%c", (m * i) > 100 ? ((m * i) / 100) : ' ');
+				printf("%c", (m * i) > 10 ? ((m * i) / 10) : ' ');
+				printf("%d", ((m * i) % 10));
 			}
 		}
-		_putchar('\n');
+		printf('\n');
 	}
 }
