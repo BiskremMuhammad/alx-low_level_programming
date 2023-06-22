@@ -2,11 +2,13 @@
 #include <stdio.h>
 
 /**
- * natural - print natural numbers to 1048 & is multiple by 3 | 5
+ * natural - print natural numbers to 1024 & is multiple by 3 | 5
  */
 void natural(void)
 {
 	int i, sum;
+
+	sum = 0;
 
 	for (i = 0; i < 1024; i++)
 	{
