@@ -12,3 +12,4 @@ int add(int a, int b);
 void print_to_98(int n);
 void print_times_table(int n);
 void natural(void);
+void fibonacci(void);
