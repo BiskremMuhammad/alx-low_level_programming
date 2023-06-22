@@ -10,7 +10,6 @@
  */
 int print_last_digit(int n)
 {
-	printf("the whole number is: %d", n);
-	_putchar('0' + (abs(n) % 10));
-	return (abs(n) % 10);
+	_putchar('0' + (llabs(n) % 10));
+	return (llabs(n) % 10);
 }
