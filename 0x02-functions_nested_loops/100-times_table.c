@@ -17,12 +17,12 @@ void print_times_table(int n)
 				printf("%d", i);
 			else
 			{
-				printf(',');
-				printf("%c", (m * i) > 100 ? ((m * i) / 100) : ' ');
-				printf("%c", (m * i) > 10 ? ((m * i) / 10) : ' ');
+				printf(",");
+				printf("%c", (m * i) > 100 ? ((m * i) / 100) : " ");
+				printf("%c", (m * i) > 10 ? ((m * i) / 10) : " ");
 				printf("%d", ((m * i) % 10));
 			}
 		}
-		printf('\n');
+		printf("\n");
 	}
 }
