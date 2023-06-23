@@ -10,7 +10,8 @@ int main(void)
 	int i;
 
 	i = 0;
-	printf("%d is positive", positive_or_negative(i));
+	if (positive_or_negative(i) > 0)
+		printf("%d is positive", i);
 
 	return (0);
 }
