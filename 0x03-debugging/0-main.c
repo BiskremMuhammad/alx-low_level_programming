@@ -10,8 +10,7 @@ int main(void)
 	int i;
 
 	i = 0;
-	if (positive_or_negative(i) == 0)
-		printf("%d is zero\n", i);
+	printf(positive_or_negative(i) == 0 ? "0 is zero\n" : "");
 
 	return (0);
 }
