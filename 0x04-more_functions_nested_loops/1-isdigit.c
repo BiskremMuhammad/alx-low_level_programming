@@ -9,5 +9,5 @@
  */
 int _isdigit(char c)
 {
-	return isdigit(c) ? 1 : 0;
+	return (isdigit(c) ? 1 : 0);
 }
