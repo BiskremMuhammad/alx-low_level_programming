@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - using pointer to change var value!!
- * @*n: pointer
+ * @n: pointer
  */
 void reset_to_98(int *n)
 {
