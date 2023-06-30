@@ -9,6 +9,5 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char res[100] = strcat(*dest, *src);
-	return (&res);
+	return (strcat(dest, src));
 }
