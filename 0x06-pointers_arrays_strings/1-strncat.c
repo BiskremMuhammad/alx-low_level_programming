@@ -10,8 +10,5 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	char s[50];
-
-	strncpy(s, src, n);
-	return (strcat(dest, s));
+	return (strncat(dest, s, n));
 }
