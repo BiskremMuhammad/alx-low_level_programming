@@ -11,7 +11,7 @@ void _print_rev_recursion(char *s)
 
 	printf("%c", s[strlen(s) - 1]);
 
-	if (strlen(s) > 0)
+	if (strlen(s) > 1)
 	{
 		strncpy(sc, s, strlen(s) - 1);
 		_print_rev_recursion(sc);
