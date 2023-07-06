@@ -9,6 +9,7 @@ void _print_rev_recursion(char *s)
 {
 	char sc[100];
 
+	memset(sc, '\0', sizeof(sc));
 	printf("%c", s[strlen(s) - 1]);
 
 	if (strlen(s) > 1)
