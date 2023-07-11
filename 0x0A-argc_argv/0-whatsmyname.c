@@ -2,6 +2,8 @@
 
 /**
  * main - entry point
+ * @argc: script arguments count
+ * @argv: script passed arguments
  *
  * Return: {int}
  */
