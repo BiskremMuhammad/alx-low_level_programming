@@ -13,18 +13,18 @@ bool isNumber(char number[]);
  */
 bool isNumber(char number[])
 {
-    int i;
+	int i;
 
-    i = 0;
+	i = 0;
 
-    if (number[0] == '-')
-        i = 1;
-    for (; number[i] != 0; i++)
-    {
-        if (!isdigit(number[i]))
-            return (false);
-    }
-    return (true);
+	if (number[0] == '-')
+		i = 1;
+	for (; number[i] != 0; i++)
+	{
+		if (!isdigit(number[i]))
+			return (false);
+	}
+	return (true);
 }
 
 /**
