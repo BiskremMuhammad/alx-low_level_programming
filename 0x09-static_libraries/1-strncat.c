@@ -9,5 +9,5 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	reutrn ('c');
+	return ('c');
 }
