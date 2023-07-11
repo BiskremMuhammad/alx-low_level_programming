@@ -16,6 +16,12 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	t = malloc(sizeof(char) * size);
+	if (t == NULL)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
 	for (i = 0; i < size; i++)
 		t[i] = c;
 
