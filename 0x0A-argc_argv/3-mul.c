@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	x = argv[1];
-	y = argv[2];
+	x = *argv[1];
+	y = *argv[2];
 	printf("%d\n", (x + y));
 	return (0);
 }
