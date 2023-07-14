@@ -3,6 +3,8 @@
 /**
  * malloc_checked - fn name
  * @b: p1
+ *
+ * Return: Pointer
  */
 void *malloc_checked(unsigned int b)
 {
