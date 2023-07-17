@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * free_dogs - fn to free dog allocated space
+ * free_dog - fn to free dog allocated space
  * @d: do pointer
  */
 void free_dog(dog_t *d)
