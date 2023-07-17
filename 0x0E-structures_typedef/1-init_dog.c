@@ -1,7 +1,5 @@
 #include "dog.h"
 
-void init_dog(struct dog *d, char *name, float age, char *owner);
-
 /**
  * init_dog - fn to initialize a dog object
  * @d: dog object pointer
