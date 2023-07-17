@@ -10,7 +10,7 @@ void print_dog(struct dog *d)
 	if (d)
 	{
 		printf("Name: %s\n", (d->name != NULL ? d->name : "(nill)"));
-		if (d->age != -1.0)
+		if (d->age)
 			printf("Age: %f\n", d->age);
 		else
 			printf("Age: (nill)");
