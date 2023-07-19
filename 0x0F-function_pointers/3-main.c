@@ -11,37 +11,35 @@
 int main(int argc, char *argv[])
 {
 	int num1, num2, res;
+	int (*op)(int, int);
 
 	/* check for not valid number of arguments */
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(98);
-	}
-
-	/* check if operator is not valid */
-	if (
-			strcmp(argv[2], "+") != 0 &&
-			strcmp(argv[2], "-") != 0 &&
-			strcmp(argv[2], "*") != 0 &&
-			strcmp(argv[2], "/") != 0 &&
-			strcmp(argv[2], "%") != 0
-	)
-	{
-		printf("Error\n");
-		exit(99);
+		return (98);
 	}
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
+
+	/* check if operator is not valid */
+	op = *get_op_func(argv[2]);
+
+	if (op == NULL)
+	{
+		printf("Error\n");
+		return (99);
+	}
+
 	/* check if dividing by or modulus of 0 */
 	if ((strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0) && num2 == 0)
 	{
 		printf("Error\n");
-		exit(100);
+		return (100);
 	}
 
-	res = (*get_op_func(argv[2]))(num1, num2);
+	res = op(num1, num2);
 	printf("%d\n", res);
 
 	return (0);
