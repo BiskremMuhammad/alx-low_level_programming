@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <string.h>
 
 /**
  * main - Entry Point
@@ -11,19 +12,20 @@ int main(int argc, char *argv[])
 {
 	int num1, num2, res;
 
+	/* check for not valid number of arguments */
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	// check if operator is not valid
+	/* check if operator is not valid */
 	if (
-			argv[2] != "+" &&
-			argv[2] != "-" &&
-			argv[2] != "*" &&
-			argv[2] != "/" &&
-			argv[2] != "%"
+			strcmp(argv[2], "+") != 0 &&
+			strcmp(argv[2], "-") != 0 &&
+			strcmp(argv[2], "*") != 0 &&
+			strcmp(argv[2], "/") != 0 &&
+			strcmp(argv[2], "%") != 0
 	)
 	{
 		printf("Error\n");
@@ -32,7 +34,8 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	if ((argv[2] == "/" || argv[2] == "%") && num2 == 0)
+	/* check if dividing by or modulus of 0 */
+	if ((strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0) && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
