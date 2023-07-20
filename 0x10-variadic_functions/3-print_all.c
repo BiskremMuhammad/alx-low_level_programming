@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
 #include <string.h>
-#include <stdbool.h>
 
 /**
  * print_all - variadic fn to print anything passed to it
@@ -11,55 +10,39 @@ void print_all(const char * const format, ...)
 {
 	va_list a;
 	size_t i;
-	int d;
-	char c;
-	float f;
-	bool v;
 
 	i = 0;
 	va_start(a, format);
 	while (i < strlen(format))
 	{
-		v = false;
 		switch (format[i])
 		{
 			case 'c':
-				c = (char)va_arg(a, int);
-				printf("%c", c);
-				v = true;
+				printf("%c", (char)va_arg(a, int));
 				break;
 			case 'i':
-				d = va_arg(a, int);
-				printf("%d", d);
-				v = true;
+				printf("%d", va_arg(a, int));
 				break;
 			case 'f':
-				f = (float)va_arg(a, double);
-				printf("%f", f);
-				v = true;
+				printf("%f", (float)va_arg(a, double));
 				break;
 			case 's':
 				{
 					char *str = va_arg(a, char *);
 
-					v = true;
 					if (str == NULL)
 					{
 						printf("(nil)");
 						break;
 					}
 					printf("%s", str);
-					break;
 				}
-			default:
-				break;
 		}
-
-		i++;
-		if (i < strlen(format) && v)
+		if (i < strlen(format) - 1 && (format[i] == 'c' || format[i] == 'i' ||
+					format[i] == 'f' || format[i] == 's'))
 			printf(", ");
+		i++;
 	}
-
 	printf("\n");
 	va_end(a);
 }
