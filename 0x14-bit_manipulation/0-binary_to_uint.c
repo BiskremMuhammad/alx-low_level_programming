@@ -8,12 +8,15 @@
  * Return: {unsigned int}
  */
 unsigned int binary_to_uint(const char *b)
-{
+{	
+	unsigned int result;
+	int length, i;
+
 	if (b == NULL)
 		return (0);
 
-	unsigned int result = 0;
-	int length = strlen(b), i;
+	length = strlen(b);
+	result = 0;
 
 	for (i = 0; i < length; i++)
 	{
