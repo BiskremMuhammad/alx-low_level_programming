@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 
+	f = argv[1];
 	fo = open(f, O_RDONLY);
 	if (fo == -1)
 	{
@@ -55,7 +56,7 @@ int main(int argc, char *argv[])
 	printf("OS/ABI: %d\n", elf_header.e_ident[EI_OSABI]);
 	printf("ABI Version: %d\n", elf_header.e_ident[EI_ABIVERSION]);
 	printf("Type: %d\n", elf_header.e_type);
-	printf("Entry point address: 0x%llx\n", (long long) elf_header.e_entry);
+	printf("Entry point address: 0x%lx\n", (unsigned long) elf_header.e_entry);
 
 	close(fo);
 
