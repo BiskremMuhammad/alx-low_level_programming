@@ -22,11 +22,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	totalLetters = 0;
-	while ((letterByte = read(f, buffer, sizeof(buffer))) > 0 && totalLetters < letters)
+	while ((letterByte = read(f, buffer, sizeof(buffer))) > 0 && totalLetters < (ssize_t)letters)
 	{
 		 ssize_t p, w;
 
-		 p = (letterByte > (ssize_t)(letters - totalLetters)) ? (letters - totalLetters) : letterByte;
+		 p = (letterByte > (ssize_t)(letters - totalLetters)) ? (ssize_t)(letters - totalLetters) : letterByte;
 		 w = write(STDOUT_FILENO, buffer, p);
 
 		 if (w < 0 || w != p)
