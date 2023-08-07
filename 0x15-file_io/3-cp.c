@@ -3,6 +3,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+#define BUFFER_SIZE 1024
+
 /**
  * main - Entry Point
  * @argc: args count
@@ -40,7 +42,7 @@ int main(int argc, char *argv[])
 		return (99);
 	}
 
-	while ((bytes = read(from, buffer, sizeof(buffer))) > 0)
+	while ((bytes = read(fs, buffer, sizeof(buffer))) > 0)
 	{
 		ssize_t w;
 
@@ -58,15 +60,15 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 
-	if (close(from) == -1)
+	if (close(fs) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fs);
 		return (100);
 	}
 
-	if (close(to) == -1)
+	if (close(fd) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", to);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		return (100);
 	}
 
