@@ -10,7 +10,7 @@ size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *cursor = head;
 	listint_t **p;
-	unsigned int list_len = listint_len(head);
+	int list_len = listint_len(head);
 	size_t c = 0;
 
 	p = malloc(sizeof(listint_t) * list_len);
@@ -59,7 +59,7 @@ size_t listint_len(const listint_t *h)
  *
  * Return: {int} 1 on success, 0 on fail
  */
-int check_ptr(const listint_t *ptr, listint_t **array, unsigned int size)
+int check_ptr(const listint_t *ptr, listint_t **array, int size)
 {
 	while (size-- >= 0)
 	{
