@@ -28,18 +28,18 @@ int check_valid_string(const char *c)
  *
  * Return: {unsigned int}
  */
-unsigned int binary_to_uint(const char *c)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int decimal = 0;
 	int length = 0, base = 1;
 
-	if (!check_valid_string(c))
+	if (!check_valid_string(b))
 		return (0);
-	while (c[length] != '\0')
+	while (b[length] != '\0')
 		length++;
 	while (length)
 	{
-		decimal += ((c[length - 1] - '0') * base);
+		decimal += ((b[length - 1] - '0') * base);
 		base *= 2;
 		length--;
 	}
